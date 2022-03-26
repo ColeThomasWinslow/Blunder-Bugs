@@ -1,5 +1,5 @@
 import React from "react";
-
+import styled from "styled-components";
 function Options() {
   const SubOptions = [
     {
@@ -37,22 +37,46 @@ function Options() {
     },
   ];
   return (
-    <div>
+    <Container>
       {SubOptions.map((element) => {
         return (
-          <div>
-            <h3>{element.type}</h3>
-            <p>${element.amount}</p>
+          <Card>
+            <Top>
+              <h3>{element.type}</h3>
+              <p>${element.amount}</p>
+            </Top>
             <ul>
               {element.included.map((listItem) => {
                 return <li>{listItem.item}</li>;
               })}
             </ul>
-          </div>
+            <button>Select Option</button>
+          </Card>
         );
       })}
-    </div>
+    </Container>
   );
 }
 
 export default Options;
+const Top = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+`;
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+`;
+const Card = styled.div`
+  display: flex;
+  width: 90vw;
+  box-shadow: 2px 0px 10px #dddddd;
+  max-width: 250px;
+  flex-direction: column;
+  li {
+    margin-bottom: 30px;
+  }
+`;
