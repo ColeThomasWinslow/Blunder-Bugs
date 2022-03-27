@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 import BBLogo from "../../Icons/BlunderBugsLogo.svg";
 function Logo() {
   return (
-    <Link to="/">
-      <img src={BBLogo} alt="Blunder Bugs Logo" />
-    </Link>
+    <>
+      <img
+        className="Logo"
+        width="155px"
+        src={BBLogo}
+        alt="Blunder Bugs Logo"
+      />
+    </>
   );
 }
 

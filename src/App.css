@@ -20,6 +20,17 @@ body {
   background-size: cover;
   background-position: center;
 }
+.Content {
+  margin: 30px;
+}
+.Application {
+  display: flex;
+}
+.Pages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .ModelScreen {
   background: #0000008f;
   position: absolute;
@@ -43,4 +54,9 @@ body {
   background: white;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .Application {
+    flex-direction: column;
+  }
 }

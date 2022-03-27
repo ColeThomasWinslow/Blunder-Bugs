@@ -11,7 +11,7 @@ import DashNav from "./Dashboard/DashNav/DashNav";
 import Assigned from "./Dashboard/Assigned/Assigned";
 import CreateNew from "./Dashboard/CreateNew/CreateNew";
 function App() {
-  const User = true;
+  const User = false;
   return (
     <div className="App">
       <Router>
@@ -26,15 +26,19 @@ function App() {
             <Footer />
           </>
         ) : (
-          <>
+          <div className="Application">
             <DashNav />
-            <TopBar />
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/Assigned" element={<Assigned />} />
-              <Route path="/Create" element={<CreateNew />} />
-            </Routes>
-          </>
+            <div className="Pages">
+              <TopBar />
+              <div className="Content">
+                <Routes>
+                  <Route path="/" element={<Dashboard />} />
+                  <Route path="/Assigned" element={<Assigned />} />
+                  <Route path="/Create" element={<CreateNew />} />
+                </Routes>
+              </div>
+            </div>
+          </div>
         )}
       </Router>
     </div>

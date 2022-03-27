@@ -39,22 +39,22 @@ const LinkCont = styled.div`
   .Create {
     background: var(--light-color);
     border: none;
-    font-weight: 300;
+    box-shadow: 0px 0px 4px #dddddd;
     font-size: 12px;
     width: 120px;
-    padding: 4px;
-    border-radius: 5px;
+    padding: 5px;
+    border-radius: 4px;
     color: white;
   }
   .Login {
     font-size: 12px;
-    font-weight: 300;
+    box-shadow: 0px 0px 4px #dddddd;
     background: var(--dark-color);
     color: white;
     border: none;
     width: 80px;
-    padding: 4px;
-    border-radius: 5px;
+    padding: 5px;
+    border-radius: 4px;
   }
   @media only screen and (max-width: 600px) {
     width: 100%;
