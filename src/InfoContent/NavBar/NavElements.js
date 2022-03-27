@@ -56,16 +56,25 @@ const LinkCont = styled.div`
     padding: 4px;
     border-radius: 5px;
   }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 `;
 const ElementsCont = styled.div`
   display: flex;
   width: 60%;
   justify-content: flex-end;
+  flex-wrap: wrap;
 
   a {
     font-weight: 200;
     font-size: 14px;
     color: var(--light-color);
     text-decoration: none;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin-bottom: 20px;
   }
 `;

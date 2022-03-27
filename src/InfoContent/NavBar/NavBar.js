@@ -23,6 +23,7 @@ const Board = styled.div`
 const NavBarCont = styled.nav`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
   box-shadow: 0px 0px 5px #dddddd;

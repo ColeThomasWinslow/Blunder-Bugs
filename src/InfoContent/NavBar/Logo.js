@@ -20,4 +20,8 @@ const LogoCont = styled.div`
   img {
     margin: 10px;
   }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;

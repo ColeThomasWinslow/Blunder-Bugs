@@ -31,18 +31,18 @@ export default HomePage;
 const Bottom = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: -80px;
+  margin-top: -60px;
   width: 100%;
 `;
 const Container = styled.div`
   display: flex;
-  width: 90%;
+  width: 95%;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: baseline;
 `;
 const Hero = styled.div`
-  height: 450px;
+  height: 480px;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -50,7 +50,12 @@ const Hero = styled.div`
   align-items: center;
   h2 {
     font-size: 35px;
+
+    text-align: right;
     margin: 0px;
+  }
+  p {
+    text-align: right;
   }
   a {
     display: flex;
@@ -71,7 +76,7 @@ const Hero = styled.div`
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
-    width: 65%;
+    width: 70%;
   }
 `;
 const Board = styled.div`

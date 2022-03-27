@@ -57,16 +57,20 @@ const FeatureCard = styled.div`
   padding: 10px;
   border-radius: 4px;
   flex-direction: column;
-  width: 90vw;
+  width: 80vw;
   background: white;
   box-shadow: 2px 0px 10px #dddddd;
   margin-bottom: 18px;
   max-width: 600px;
+
   h3 {
     margin: 10px;
+    font-weight: 300;
     margin-bottom: 0px;
   }
   p {
+    font-size: 14px;
+    line-height: 30px;
     border-top: 2px solid var(--light-color);
     padding-top: 10px;
     margin: 15px;

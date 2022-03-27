@@ -29,4 +29,8 @@ const FeatureCard = styled.div`
   p {
     font-weight: 200;
   }
+  @media only screen and (max-width: 1000px) {
+    max-width: 50vw;
+    margin-bottom: 20px;
+  }
 `;
